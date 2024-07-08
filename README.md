@@ -1,1 +1,1 @@
-<h1></h1>
+<h1>Wine Store Management System</h1>
