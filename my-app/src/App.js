@@ -1,6 +1,7 @@
 import logo from './logo.svg';
-import Login from './pages/Login';  // Ensure the file name is 'Login.jsx'
-import './App.css';
+import Login from './pages/Login';
+import Index from './pages/Index';
+import './src/App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Login />} />
+            <Route path="/" element={<Index />} />
           </Routes>
         </Router>
         <a
