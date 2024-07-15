@@ -1,13 +1,18 @@
 import logo from './logo.svg';
-import login from './pages/login';
+import Login from './pages/login';  // Ensure the file name is 'Login.jsx'
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Route path="/" element={<login />} />
+        <Router>
+          <Routes>
+            <Route path="/" element={<login />} />
+          </Routes>
+        </Router>
         <a
           className="App-link"
           href="https://reactjs.org"
