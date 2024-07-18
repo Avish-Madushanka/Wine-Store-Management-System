@@ -1,5 +1,6 @@
 import Login from './pages/Login';
 import Index from './pages/Index';
+import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
         <Router>
           <Routes>
           <Route path="/" element={<Index />} />
-            <Route path="/" element={<Login />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Navbar />} />
           </Routes>
         </Router>
         <a
